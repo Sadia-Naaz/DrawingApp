@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+<div id="root">
+<div class="nav-bar-outer-flex-container">
+<div class="inner-flex-1">
+<button><span class="material-symbols-outlined" id ="menu-button">menu</span></button>
+</div>
+<div class="menu-container" id="menu-container">
+    <div class="menu-content">
+        <div><span class="material-symbols-outlined">folder_open </span>open</div>
+        <div >  <span class="material-symbols-outlined">
+            save
+           </span> save to</div>
+        <div ><span class="material-symbols-outlined">
+            ios_share
+            </span>export image</div>
+        <div ><span class="material-symbols-outlined">
+            groups_2
+            </span>Live collaboration</div>
+        <div ><span class="material-symbols-outlined">
+            live_help
+            </span>  help</div>
+        <div ><span class="material-symbols-outlined">
+            delete
+            </span>reset the canvas</div>
+
+       <div><img src="./github.svg" height="20vh"width="20vw"/><a href="#">GitHub</a></div> 
+        <div><img src="./discord.svg"  height="20vh"width="20vw"><a href="#">Discord</a></div>
+       <div><img src="./twitter.svg"height="20vh"width="20vw"><a href="#">Twitter</a></div>
+        <div class="container">
+            <button id="modeToggle">Toggle Mode</button>
+            <p>Toggle Light/Dark Mode</p>
+        </div>
+    </div>
+</div>
+<div class="inner-flex-2 tool-bar">
+    <span class="material-symbols-outlined"  id="lock_open">
+        lock_open
+        </span>
+        <span class="material-symbols-outlined"  id ="pan_tool">
+            pan_tool
+            </span>
+            <span class="material-symbols-outlined"  id="cursor">
+                ads_click
+                </span>
+                <span class="material-symbols-outlined"  id="rectangle">
+                    rectangle
+                    </span>
+                    <span class="material-symbols-outlined" >
+                        check_box_outline_blank
+                        </span>
+                        <span class="material-symbols-outlined"  id="circle">
+                            circle
+                            </span>
+                            <span class="material-symbols-outlined"  id="arrow-right">
+                                east
+                                </span>
+                                <span class="material-symbols-outlined"  id="horizontal_rule">
+                                    horizontal_rule
+                                    </span>
+                        
+                                        <span class="material-symbols-outlined"  id="pencil">draw</span>
+<span class="material-symbols-outlined tool" id="text_fields">
+    text_fields
+    </span>
+    <span class="material-symbols-outlined tool"id="image">
+        image
+        </span>
+        <span class="material-symbols-outlined tool" id="ink_eraser">
+            ink_eraser
+            </span>
+            <span class="material-symbols-outlined tool" id="more_vert">
+                more_vert
+                </span>
+            
+</div>
+<div class="inner-flex-3">
+    <button id="collab"><span class="material-symbols-outlined">
+        groups
+        </span></button>
+      <button id="lib-btn" >Library<span class="material-symbols-outlined">
+            book
+            </span></button>
+</div>
+</div>
+<div class="inst-container">
+<p >To move canvas hold mouse wheel or spacebar while dragging or use the hand tool</p>
+</div>
+<canvas id ="myCanvas" style="border: 2px solid black;"></canvas>
+<footer>
+    <div id ="footer-left">
+    <div id="undo-redo">
+        <button id ="undo" class="material-symbols-outlined">undo</button>
+        <span class="material-symbols-outlined">
+        <button id ="re-do" class="material-symbols-outlined"> redo</button>
+    </div>
+    <div class="zoom-buttons">
+        <button id="zoom-in-button">+</button>
+        <div id="zoom-display">100%</div>
+        <button id="zoom-out-button">-</button>
+    </div>
+</div>
+    <button id ="footer-btn"> Scroll back to content</button>
+    <div id ="footer-right">
+    <span class="material-symbols-outlined">
+        encrypted
+    </span>
+    <span class="material-symbols-outlined">
+            help
+    </span>
+</div>
+</footer>
+</div>
+</div>
+
+
+
+
+<script src="script.js">
+</script>
+</body>
+</html>
